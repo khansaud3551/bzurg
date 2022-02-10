@@ -3,7 +3,7 @@ import PopularServicesCard from "./PopularServicesCard";
 
 function PopularServices() {
   return (
-    <div className="container-fluid px-5 my-3">
+    <div className="container-fluid px-3 px-md-5 my-3">
       <h3 className="heading_sec font-700">Popular Services</h3>
       <div className="row py-2 gy-4">
         <PopularServicesCard

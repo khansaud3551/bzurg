@@ -21,3 +21,37 @@
   padding: 0px 15px;
   font-size: 20px;
 }
+
+/* //Slider css */
+
+.swiper-button-prev:after {
+  content: "prev";
+  font-size: 28px !important;
+  font-weight: 900 !important;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: 10px;
+  right: auto;
+  background: white !important;
+  color: #293461 !important;
+  font-weight: 600 !important;
+  padding: 25px 25px !important;
+  border-radius: 100%;
+}
+
+.swiper-button-next:after {
+  content: "next";
+  font-size: 28px !important;
+  font-weight: 900 !important;
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-next {
+  left: 10px;
+  right: auto;
+  background: white !important;
+  color: #293461 !important;
+  font-weight: 600 !important;
+  padding: 25px 25px !important;
+  border-radius: 100%;
+}

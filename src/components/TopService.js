@@ -4,7 +4,7 @@ import TopServiceCard from "./TopServiceCard";
 
 function TopService() {
   return (
-    <div className="container-fluid px-5 my-5">
+    <div className="container-fluid px-3 px-md-5 my-5">
       <h3 className="heading_sec font-700">Top Service Providers</h3>
       <div className="parent py-2">
         <TopServiceCard

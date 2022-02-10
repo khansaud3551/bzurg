@@ -15,7 +15,7 @@ import { Navigation } from "swiper";
 
 function ExploreMarket() {
   return (
-    <div className="container-fluid px-5 my-5">
+    <div className="container-fluid px-3 px-md-5 my-5">
       <Swiper
         slidesPerView={4}
         spaceBetween={30}
@@ -35,11 +35,11 @@ function ExploreMarket() {
           },
           "@1.10": {
             slidesPerView: 4,
-            spaceBetween: 40,
+            spaceBetween: 30,
           },
           "@1.50": {
             slidesPerView: 5,
-            spaceBetween: 50,
+            spaceBetween: 30,
           },
         }}
         loop={true}

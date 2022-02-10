@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutsUs() {
   return (
-    <div className="container-fluid px-5 my-3">
+    <div className="container-fluid px-3 px-md-5 my-3">
       <h5 className="text-center color-prim">About Us</h5>
       <h3 className="text-center ">Why we're here</h3>
       <p className="text-center ">
