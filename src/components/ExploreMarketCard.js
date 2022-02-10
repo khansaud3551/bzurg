@@ -2,7 +2,7 @@ import React from "react";
 
 function ExploreMarketCard({ img, subheading, title }) {
   return (
-    <div className="col-12 col-sm-6 col-md-4 col-lg-3 py-2  position-relative">
+    <div className="col-sm-12 py-2  position-relative">
       <img src={img} alt="" />
       <div className="inner_card mt-4 ms-4">
         <h5>{subheading}</h5>
