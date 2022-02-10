@@ -1,6 +1,15 @@
 .header {
-  position: absolute;
+  position: fixed;
   left: 0px;
   top: 0;
   right: 0;
+  z-index: 10;
+}
+.header-shadow {
+  box-shadow: rgb(0 0 0 / 8%) 0px 1px 12px !important;
+  transform-origin: 50% 0% !important;
+  transition: -ms-transform 150ms ease 0s, -webkit-transform 150ms ease 0s,
+    transform 150ms ease 0s, opacity 150ms ease 75ms !important;
+  background: rgb(255, 255, 255);
+  color: white !important;
 }

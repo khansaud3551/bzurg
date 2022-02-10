@@ -4,8 +4,8 @@
 }
 :root {
   --primary: #5d7df7;
-  --secondary: #5a7bf7;
-  --paratext: #989898;
+  --secondary: #293461;
+  --paratext: #414141;
   --white: #fff;
 }
 body {
@@ -47,6 +47,9 @@ code {
 }
 .bg-sec {
   background-color: var(--secondary);
+}
+.bg-gray {
+  background: #eee;
 }
 
 .sm_text {
@@ -92,7 +95,26 @@ code {
 .para_text {
   color: var(--paratext);
 }
+p {
+  font-weight: 400 !important;
+
+  color: var(--paratext);
+}
+
 img {
   width: 100%;
   cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.btn {
+  font-size: 14px;
+}
+.head_margin {
+  margin-top: 65px;
+}
+.section_top {
+  margin-top: 95px;
 }

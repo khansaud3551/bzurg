@@ -6,8 +6,8 @@ function PosterHome() {
       <img className="res_mobile" src="assets/homeposter.png" alt="" />
       <div className="inner_card  h-100 d-flex align-items-center px-5">
         <div className="ms-2">
-          <h1>Earn With Skynet</h1>
-          <p>
+          <h1 className="font-600">Earn With Skynet</h1>
+          <p className="text-white">
             Join the billion dollar Skynet market and provide your services
             worldwide.
           </p>
