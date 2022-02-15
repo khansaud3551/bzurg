@@ -27,6 +27,10 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/service" element={<SingleService />} />
         <Route path="/search" element={<SearchService />} />
+        <Route
+          path="*"
+          element={<h1 className="section_top">Page not fount</h1>}
+        />
       </Routes>
       <Footer />
     </div>
