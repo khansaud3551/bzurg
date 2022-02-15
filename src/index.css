@@ -1,6 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  scroll-behavior: smooth;
 }
 :root {
   --primary: #5d7df7;
@@ -96,8 +97,6 @@ code {
   color: var(--paratext);
 }
 p {
-  font-weight: 400 !important;
-
   color: var(--paratext);
 }
 
@@ -112,9 +111,15 @@ a {
 .btn {
   font-size: 14px;
 }
+.btn:hover {
+  color: var(--white);
+}
 .head_margin {
   margin-top: 65px;
 }
 .section_top {
   margin-top: 95px;
+}
+a {
+  color: var(--primary);
 }

@@ -1,12 +1,14 @@
 import React from "react";
 import { HeartIcon } from "@heroicons/react/outline";
 import { StarIcon } from "@heroicons/react/solid";
+import { Link } from "react-router-dom";
 
 function TopServiceCard({ img, name, servicename, description, rating }) {
   return (
     <div className="child">
-      <img src={img} alt="" />
-
+      <Link to="/service">
+        <img src={img} alt="" />
+      </Link>
       <div className="service-body border border-top-0  rounded-b-1 p-2">
         <div className="d-flex justify-content-between">
           <h5 className="m-0 xl_text">{name}</h5>
@@ -24,7 +26,9 @@ function TopServiceCard({ img, name, servicename, description, rating }) {
               <StarIcon className="star_icon" key={i} />
             ))}
         </p>
-        <button className="btn border border-2 w-100 mx-auto">Hire</button>
+        <Link to={"/service"}>
+          <button className="btn border border-2 w-100 mx-auto">Hire</button>
+        </Link>
       </div>
     </div>
   );

@@ -10,6 +10,9 @@ import {
 import SingleService from "./pages/SingleService";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import SearchService from "./pages/SearchService";
 
 function App() {
   return (
@@ -19,8 +22,11 @@ function App() {
       </div>
 
       <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/service" element={<SingleService />} />
+        <Route path="/search" element={<SearchService />} />
       </Routes>
       <Footer />
     </div>

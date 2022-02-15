@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
@@ -19,13 +20,11 @@ function Header() {
         {/* navbar navbar-expand-lg navbar-dark bg-transparent */}
         <nav className={" navbar navbar-expand-lg "}>
           <div className="container-fluid p-0">
-            <a
-              className="navbar-brand font-600 text-white"
-              style={{ fontSize: "26px" }}
-              href="#"
-            >
-              Navbar
-            </a>
+            <Link to={"/"} className="navbar-brand font-600 text-white">
+              <a style={{ fontSize: "26px" }} href="/">
+                Navbar
+              </a>
+            </Link>
 
             <button
               className="navbar-toggler"
@@ -123,9 +122,11 @@ function Header() {
               >
                 Search
               </button>
-              <button className="btn bg-prim  px-3 rounded-1 font-500 text-white">
-                Login
-              </button>
+              <Link to={"/login"}>
+                <button className="btn bg-prim  px-3 rounded-1 font-500 text-white">
+                  Login
+                </button>
+              </Link>
             </div>
           </div>
         </nav>

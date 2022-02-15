@@ -16,6 +16,7 @@ import { Navigation } from "swiper";
 function ExploreMarket() {
   return (
     <div className="container-fluid px-3 px-md-5 my-5">
+      <h2 className="font-700 heading_sec">Explore The Market Place</h2>
       <Swiper
         slidesPerView={4}
         spaceBetween={30}

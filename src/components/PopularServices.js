@@ -4,7 +4,7 @@ import PopularServicesCard from "./PopularServicesCard";
 function PopularServices() {
   return (
     <div className="container-fluid px-3 px-md-5 my-3">
-      <h3 className="heading_sec font-700">Popular Services</h3>
+      <h2 className="heading_sec font-700">Popular Services</h2>
       <div className="row py-2 gy-4">
         <PopularServicesCard
           img="assets/popular1.png"
