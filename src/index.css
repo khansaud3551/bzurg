@@ -113,13 +113,18 @@ a {
 }
 .btn:hover {
   color: var(--white);
+  background-color: var(--primary);
 }
 .head_margin {
   margin-top: 65px;
 }
 .section_top {
-  margin-top: 95px;
+  margin-top: 90px;
 }
 a {
   color: var(--primary);
+}
+
+.grey_text {
+  color: #726c6c;
 }

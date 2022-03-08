@@ -18,6 +18,7 @@ function HomePage() {
         <Banner />
       </div>
       <ExploreMarket />
+
       <PopularServices />
       <TopService />
       <PosterHome />

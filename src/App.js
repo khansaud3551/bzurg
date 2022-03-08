@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import SearchService from "./pages/SearchService";
+import Dashboard from "./admin/Dashboard";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/service" element={<SingleService />} />
         <Route path="/search" element={<SearchService />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route
           path="*"
           element={<h1 className="section_top">Page not fount</h1>}

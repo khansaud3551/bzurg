@@ -1,6 +1,7 @@
 import React from "react";
 import "./Banner.css";
 import { SearchIcon } from "@heroicons/react/outline";
+import { Link } from "react-router-dom";
 
 function Banner() {
   return (
@@ -15,9 +16,11 @@ function Banner() {
             placeholder={`Search for freelancers, services, or projects`}
             type="text"
           />
-          <button className="btn bg-prim text-white rounded-0 px-5 ">
-            Search
-          </button>
+          <Link to={"/search"}>
+            <button className="btn bg-prim text-white rounded-0 px-5 h-100">
+              Search
+            </button>
+          </Link>
         </div>
       </div>
     </div>
