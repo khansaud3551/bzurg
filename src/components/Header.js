@@ -20,7 +20,12 @@ function Header() {
         {/* navbar navbar-expand-lg navbar-dark bg-transparent */}
         <nav className={" navbar navbar-expand-lg "}>
           <div className="container-fluid p-0">
-            <Link to={"/"} className="navbar-brand font-600 text-white">
+            <Link
+              to={"/"}
+              className={`${
+                scroll ? "bg-white" : "text-white "
+              } navbar-brand font-600`}
+            >
               <a style={{ fontSize: "26px" }} href="/">
                 Navbar
               </a>
@@ -41,12 +46,12 @@ function Header() {
               className="collapse navbar-collapse "
               id="navbarSupportedContent"
             >
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center w-100 lg_text font-500">
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center w-100 lg_text font-500 styl32">
                 <li className="nav-item">
                   <a
                     className={`${
-                      scroll ? "color_prim" : "text-white"
-                    } nav-link active`}
+                      scroll ? "text-black " : "text-white  "
+                    } active`}
                     aria-current="page"
                     href="#"
                   >
@@ -56,8 +61,8 @@ function Header() {
                 <li className="nav-item">
                   <a
                     className={`${
-                      scroll ? "color_prim" : "text-white"
-                    } nav-link active`}
+                      scroll ? "color_prim" : "text-white "
+                    }  active`}
                     aria-current="page"
                     href="#"
                   >
@@ -68,7 +73,7 @@ function Header() {
                   <a
                     className={`${
                       scroll ? "color_prim" : "text-white"
-                    } nav-link active`}
+                    }  active`}
                     aria-current="page"
                     href="#"
                   >
@@ -78,8 +83,8 @@ function Header() {
                 <li className="nav-item dropdown">
                   <a
                     className={`${
-                      scroll ? "color_prim" : "text-white"
-                    } nav-link active dropdown-toggle`}
+                      scroll ? "" : "text-white "
+                    }  active dropdown-toggle`}
                     href="#"
                     id="navbarDropdown"
                     role="button"

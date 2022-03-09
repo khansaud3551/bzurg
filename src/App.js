@@ -14,6 +14,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import SearchService from "./pages/SearchService";
 import Dashboard from "./admin/Dashboard";
+import Categories from "./pages/Categories";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/service" element={<SingleService />} />
         <Route path="/search" element={<SearchService />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/categories" element={<Categories />}></Route>
         <Route
           path="*"
           element={<h1 className="section_top">Page not fount</h1>}
