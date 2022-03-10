@@ -9,16 +9,16 @@ function Categories() {
       <div>
         <ul className="d-flex  justify-content-center margin_topjkj">
           <li className="nav-item px-2 border-end">
-            <a href="">Grahpics Desining</a>
+            <a href="">Social Media Marketing</a>
           </li>
           <li className="nav-item px-2 bord_left9">
-            <a href="">Grahpics Desining</a>
+            <a href="">Display Advertising</a>
           </li>
           <li className="nav-item px-2 bord_left9">
-            <a href="">Grahpics Desining</a>
+            <a href="">Mobile App Marketing</a>
           </li>
           <li className="nav-item px-2 bord_left9">
-            <a href="">Grahpics Desining</a>
+            <a href="">Community Management</a>
           </li>
         </ul>
       </div>
@@ -31,21 +31,25 @@ function Categories() {
           rebum.
         </p>
       </div>
-      <div className="row my-5">
+      <div className="row my-5 text-center">
         <div className="col-3">
           <img className="w-100" src="assets/categories/image-1.png" alt="" />
+          <h5 className="my-3">Social Media Marketing</h5>
         </div>
         <div className="col-3">
           <img className="w-100" src="/assets/categories/image-2.png" alt="" />
+          <h5 className="my-3">Display Advertising</h5>
         </div>
         <div className="col-3">
           <img className="w-100" src="/assets/categories/image-3.png" alt="" />
+          <h5 className="my-3">Mobile App Marketing</h5>
         </div>
         <div className="col-3">
           <img className="w-100" src="/assets/categories/image-3.png" alt="" />
+          <h5 className="my-3">Community Management</h5>
         </div>
       </div>
-      <h2 className="heading_sec font-700 mt-5">
+      <h2 className="heading_sec font-600 mt-5">
         Popular Digital Marketing Experts
       </h2>
       <div className="parent py-2">

@@ -6,7 +6,7 @@ import "./SearchService.css";
 
 function SearchService() {
   return (
-    <div className="section_top container-fluid px-5">
+    <div className="section_top container-fluid px-md-5 mb-5">
       <h2 className="font-700 mar89">Filters</h2>
       <div className="row gap-1 ">
         <div className="width_k8">
