@@ -35,3 +35,15 @@
   font-size: 13px;
   cursor: pointer;
 }
+
+/* //profile */
+
+.dashbaord_img1h {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.profile > input {
+  width: 100% !important;
+}

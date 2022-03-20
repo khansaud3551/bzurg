@@ -15,6 +15,7 @@ import Register from "./pages/Register";
 import SearchService from "./pages/SearchService";
 import Dashboard from "./admin/Dashboard";
 import Categories from "./pages/Categories";
+import Profile from "./admin/components/Profile";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/service" element={<SingleService />} />
         <Route path="/search" element={<SearchService />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard/profile" element={<Profile />} />
         <Route path="/categories" element={<Categories />}></Route>
         <Route
           path="*"
