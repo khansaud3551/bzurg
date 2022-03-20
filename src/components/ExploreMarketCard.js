@@ -6,7 +6,7 @@ function ExploreMarketCard({ img, subheading, title }) {
       <img src={img} alt="" />
       <div className="inner_card mt-4 ms-4">
         <h5>{subheading}</h5>
-        <h3 className="mb-0">{title}</h3>
+        <h3 className="mb-0 text-capitalize">{title}</h3>
       </div>
     </div>
   );

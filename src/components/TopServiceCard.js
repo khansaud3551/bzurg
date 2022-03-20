@@ -27,7 +27,7 @@ function TopServiceCard({ img, name, servicename, description, rating }) {
             ))}
         </p>
         <Link to={"/service"}>
-          <button className="btn border border-2 w-100 mx-auto">Hire</button>
+          <button className="btn border border-1 w-100 mx-auto">Hire</button>
         </Link>
       </div>
     </div>

@@ -62,10 +62,10 @@ function ExploreMarket() {
         modules={[Navigation]}
         className="mySwiper"
       >
-        {serviceData.map((service, index) => (
+        {serviceData?.map((service, index) => (
           <SwiperSlide key={index}>
             <ExploreMarketCard
-              img="assets/explore1.png"
+              img="assets/explore2.png"
               subheading="Build your brand"
               title={service.service}
             />
