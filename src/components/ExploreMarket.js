@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import "./ExploreMarket.css";
 import ExploreMarketCard from "./ExploreMarketCard";
 
@@ -14,6 +14,19 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 
 function ExploreMarket() {
+  const [serviceData, setServiceData] = useState([]);
+
+  useEffect(() => {
+    //fetching data from api
+    const fetchData = async () => {
+      const response = await fetch("http://localhost:8080/api/services");
+      const data = await response.json();
+      setServiceData(data);
+    };
+    fetchData();
+  }, []);
+  console.log(serviceData);
+
   return (
     <div className="container-fluid px-3 px-md-5 my-5">
       <h2 className="font-700 heading_sec">Explore The Market Place</h2>
@@ -49,14 +62,23 @@ function ExploreMarket() {
         modules={[Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
+        {serviceData.map((service, index) => (
+          <SwiperSlide key={index}>
+            <ExploreMarketCard
+              img="assets/explore1.png"
+              subheading="Build your brand"
+              title={service.service}
+            />
+          </SwiperSlide>
+        ))}
+        {/* <SwiperSlide>
           <ExploreMarketCard
             img="assets/explore1.png"
             subheading="Build your brand"
             title="Graghic Desgning"
           />
-        </SwiperSlide>
-        <SwiperSlide>
+        </SwiperSlide> */}
+        {/* <SwiperSlide>
           <ExploreMarketCard
             img="assets/explore2.png"
             subheading="Build your brand"
@@ -90,31 +112,8 @@ function ExploreMarket() {
             subheading="Health "
             title="Personal Health Care"
           />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
-      {/* <h3 className="heading_sec font-700">Explore The Market Place</h3>
-      <div className="row py-2">
-        <ExploreMarketCard
-          img="assets/explore1.png"
-          subheading="Build your brand"
-          title="Graghic Desgning"
-        />
-        <ExploreMarketCard
-          img="assets/explore2.png"
-          subheading="Build your brand"
-          title=" Application Development"
-        />
-        <ExploreMarketCard
-          img="assets/explore3.png"
-          subheading="Health "
-          title="Personal Health Care"
-        />
-        <ExploreMarketCard
-          img="assets/explore4.png"
-          subheading="Grow your business "
-          title="Video Creator"
-        />
-      </div> */}
     </div>
   );
 }

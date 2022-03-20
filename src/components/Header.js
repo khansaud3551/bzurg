@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
-  window.addEventListener("scroll", scrollfunction);
   const [scroll, setScroll] = useState(false);
+  window.addEventListener("scroll", scrollfunction);
+
   function scrollfunction() {
     if (window.scrollY > 10) {
       setScroll(true);
@@ -22,13 +23,12 @@ function Header() {
           <div className="container-fluid p-0">
             <Link
               to={"/"}
+              style={{ fontSize: "26px" }}
               className={`${
                 scroll ? "bg-white" : "text-white "
               } navbar-brand font-600`}
             >
-              <a style={{ fontSize: "26px" }} href="/">
-                Navbar
-              </a>
+              Navbar
             </Link>
 
             <button
